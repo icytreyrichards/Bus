@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    style="@style/AppTheme.NoActionBar">
+    <ImageView
+        android:id="@+id/imageView2" android:layout_marginTop="05dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/firstlayout"
+        android:layout_alignStart="@+id/firstlayout" android:layout_gravity="center"
+        app:srcCompat="@drawable/bus" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:layout_marginTop="10dp"
+          >
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar1"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/app_name"
+                android:id="@+id/textView44"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:textColor="@color/white"
+                android:hint="Email"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:ems="10"
+                android:id="@+id/editTextemaillogin"
+                />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="pin"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:ems="10"
+                android:id="@+id/editTextpasswordlogin" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/buttonlogin"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/common_google_signin_btn_text_dark"
+                android:background="@drawable/round_primary"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="New Customer"
+                android:id="@+id/textViewsignup"
+                android:textSize="17sp"
+                android:textColor="@color/primary"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="start" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Forgotten Pin?"
+                    android:id="@+id/textViewforgotten"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton android:visibility="gone"
+                android:id="@+id/twitterLogin"  android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="left" />
+            <com.facebook.login.widget.LoginButton android:visibility="gone"
+                android:id="@+id/login_button" android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="left" />
+
+        </LinearLayout>
+    <LinearLayout android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true">
+
+
+    </LinearLayout>
+
+</LinearLayout>

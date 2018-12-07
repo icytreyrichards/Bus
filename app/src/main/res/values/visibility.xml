@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Enum values pulled from Android source -->
+    <string name="visibility_visible">0</string>
+    <string name="visibility_invisible">1</string>
+    <string name="visibility_gone">2</string>
+
+    <string name="product_info_footer_button_visibility">@string/visibility_visible</string>
+</resources>

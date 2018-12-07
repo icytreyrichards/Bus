@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Safari Now</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1548171484455270/8482527941</string>
+    <string name="banner_ad_unit_instestitial">ca-app-pub-1548171484455270~4266833146</string>
+    <string name="server_client_id">399485254324-l76qvbji1g40mp2jcgpfmj8dppd8fo5o.apps.googleusercontent.com</string>
+    <string-array name="query_suggestions">
+        <item>Identity Card</item>
+        <item>National ID</item>
+        <item>Driving Permit</item>
+        <item>Passport</item>
+        <item>Academic Transcript</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="query_subs">
+        <item>all identity card formats</item>
+        <item>national identification cards</item>
+        <item>permits</item>
+        <item>passports</item>
+        <item>all result slips</item>
+        <item>other items </item>
+    </string-array>
+
+    <string name="facebook_app_id">201278933655500</string>
+</resources>

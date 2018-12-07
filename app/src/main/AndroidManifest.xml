@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.easybus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk android:targetSdkVersion="23" />
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.my.easybus.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.my.easybus.permission.C2D_MESSAGE"/>
+    <permission
+        android:name="com.my.easybus.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ebus"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
+        <activity android:name="com.my.easybus.Map"></activity>
+        <activity android:name="com.my.easybus.Password"></activity>
+        <activity android:name="com.my.easybus.MainActivity"></activity>
+        <activity android:name="com.my.easybus.SearchRoutes"></activity>
+        <activity android:name="com.my.easybus.IndexActivity"></activity>
+        <activity android:name="com.my.easybus.Details"></activity>
+        <activity android:name="com.my.easybus.Payment"></activity>
+        <activity android:name="com.my.easybus.Profile"></activity>
+        <activity android:name="com.my.easybus.Prices"></activity>
+        <activity android:name="com.my.easybus.SlideIndex"></activity>
+        <activity android:name="com.my.easybus.Schedules"></activity>
+        <activity android:name="com.my.easybus.UpdateProfile"></activity>
+        <activity android:name="com.my.easybus.ViewTicketDetails"></activity>
+        <activity android:name="com.my.easybus.BookingActivity"></activity>
+        <activity android:name="com.my.easybus.SearchTickets"></activity>
+        <activity android:name="com.my.easybus.AddPickups"></activity>
+        <activity android:name="com.my.easybus.HeroActivity"></activity>
+        <activity android:name="com.my.easybus.Login"></activity>
+        <activity android:name="com.my.easybus.DriversActivity"></activity>
+        <activity android:name="com.my.easybus.DriverActivity"></activity>
+        <activity android:name="com.my.easybus.DetailsDriver"></activity>
+        <activity android:name="track.TrackNow"></activity>
+        <activity android:name=".RateTrip"></activity>
+        <activity android:name="com.my.easybus.FacebookLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/facebook_app_id" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.my.easybus.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD6ccN76sVEK-7mWVebCqa9jPVocljsZzQ" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f7eba1c14f1d377cd57a75158db06acbfb8b1bcd" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/accent" />
+    </application>
+
+</manifest>

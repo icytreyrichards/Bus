@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10"
+                    android:padding="05dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="3"
+                        android:padding="05dp">
+                        <TextView
+                            android:id="@+id/textViewcustomcompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gaagaa Bus "
+                            android:textColor="@color/primary_dark"
+                            android:textSize="15sp"
+                            />
+                        <ImageView
+                            android:id="@+id/imageViewcustomprofilephoto"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logo"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="193dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="7"
+                        android:padding="05dp">
+
+                        <TextView
+                            android:id="@+id/textViewcustomsource"
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="From Arua"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="14sp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:id="@+id/textViewcustomdestination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To Kampala"
+                            android:textColor="@color/primary_text"
+                            android:textSize="15sp"
+                            android:layout_alignTop="@+id/textViewtheemergencyFullname"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:id="@+id/textViewcustomtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="8:00am"
+                            android:textColor="@color/primary_text"
+                            android:textSize="15sp"
+                            android:layout_alignTop="@+id/textViewtheemergencyFullname"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:id="@+id/textViewcustomprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30,000 shs"
+                            android:textColor="@color/accent"
+                            android:textSize="15sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/textViewcustomtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ordinary"
+                            android:textColor="@color/primary_dark"
+                            android:textSize="15sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffe5e5e5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="05dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="5dp"
+        android:paddingBottom="0dp"
+        android:id="@+id/cv1"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="05dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="05dp"
+            android:weightSum="10">
+
+
+            <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:text=""
+            android:hint="pick a date of travel"
+            android:background="#ffffff"
+            android:drawableLeft="@android:drawable/ic_menu_day"
+            android:textColorHint="@color/black"
+            android:backgroundTint="#eee"
+            android:ems="10"
+            android:id="@+id/editTextdate"
+            />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_weight="8" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Check Seats"
+                android:id="@+id/buttoncheck"
+                android:layout_gravity="end"
+                android:drawableRight="@drawable/reload"
+                android:textColor="@color/white"
+
+                android:background="@color/primary" />
+        </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:text=""
+                android:hint="seat picked"
+                android:enabled="false"
+                android:background="#ffffff"
+                android:textColorHint="@color/black"
+                android:backgroundTint="#fff"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:id="@+id/editTextseat"
+                />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Pick a Seat"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/rvhistory"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed To Checkout"
+                android:id="@+id/buttonpayment"
+                android:layout_marginTop="05dp"
+                android:textColor="@color/white"
+                android:background="@color/accent"
+                android:layout_gravity="bottom|center"/>
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>

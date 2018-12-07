@@ -1,0 +1,86 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#727272</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+    </style>
+
+    <style name="ToolTheme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ToolTheme2">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="whiteThem">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/dots</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="expandedappbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="collapsedappbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar
+        <item name="searchBackground">@android:integer/config_longAnimTime</item>
+         -->
+        <!-- Change voice icon -->
+        <item name="searchVoiceIcon">@drawable/ic_action_voice_search_inverted</item>
+        <!-- Change clear text icon -->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+        <!-- Change up icon -->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+
+        <!-- Change icon for the suggestions -->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+
+        <!-- Change background for the suggestions list view -->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+
+        <item name="android:textColor">@color/primary_text</item>
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/secondary_text</item>
+        <item name="android:hint">@string/search_hint</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
+</resources>

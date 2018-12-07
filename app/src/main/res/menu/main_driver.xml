@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_action_search"
+        android:orderInCategory="100" android:visible="false"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_scan"
+        android:orderInCategory="100"  android:visible="false"
+        android:title="Scan" android:icon="@drawable/qr"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"  android:visible="false"
+        android:title="View Personal Info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_refresh_white"
+        android:title="Refresh"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_update"
+        android:orderInCategory="100"
+        android:title="Update Personal Info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_live"
+        android:orderInCategory="100"
+        android:title="Live"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_trips"
+        android:orderInCategory="100"
+        android:title="Trips"
+        app:showAsAction="always" />
+</menu>

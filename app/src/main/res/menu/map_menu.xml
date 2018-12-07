@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+    
+     <item
+        android:id="@+id/action_hybrid"
+           android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="Hybid map"
+        app:showAsAction="never"/>
+      <item
+        android:id="@+id/action_normal"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="Normal Map"
+        app:showAsAction="never"/>
+      
+       <item
+        android:id="@+id/action_add_alert"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="Add alert"
+        app:showAsAction="never"/>
+       
+        <item
+        android:id="@+id/action_remove_alert"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="remove alert"
+        app:showAsAction="never"/>
+    
+</menu>

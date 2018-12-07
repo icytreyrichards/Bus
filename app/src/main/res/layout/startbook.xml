@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical" android:padding="10dp"
+    android:layout_marginTop="40dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="05dp"
+        app:cardCornerRadius="2dp"
+       >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="03dp"
+                    android:padding="10dp"
+                    >
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:visibility="gone"
+                        android:clickable="true"
+                        ads:fabSize="mini" android:layout_gravity="end"
+                        ads:srcCompat="@drawable/white_plus" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="05dp"
+            >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="05dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Source"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="start" />
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/spinnersource"
+                android:spinnerMode="dialog"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="05dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Destination"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="start" />
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/spinnerdestination"
+                android:spinnerMode="dialog"/>
+                    </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="05dp"
+            >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center" android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clock" />
+                    <TextView
+                        android:layout_width="match_parent" android:textSize="18sp"
+                        android:layout_height="match_parent" android:text="Time"
+                        />
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/spinnertime"
+                        android:spinnerMode="dialog"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Find Buses" android:layout_marginBottom="10dp"
+                android:id="@+id/buttonsearch"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/accent"/>
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar1"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="2dp"
+        android:background="@color/grey"
+        >
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@color/grey"
+        app:cardCornerRadius="02dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:paddingBottom="30dp"
+            >
+
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="LARGE_BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

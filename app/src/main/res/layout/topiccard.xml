@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="01dp"
+        android:padding="0dp"
+        android:id="@+id/cv"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="9"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/textViewtitle"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Market Place"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageViewtopiclogo"
+                    android:layout_toEndOf="@+id/imageViewtopiclogo" />
+
+                <ImageView
+                    android:id="@+id/imageViewtopiclogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@color/primary"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/textViewsubtitle"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learn how to buy"
+                    android:textColor="#727272"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/textViewtitle"
+                    android:layout_toRightOf="@+id/imageViewtopiclogo"
+                    android:layout_toEndOf="@+id/imageViewtopiclogo" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageViewthumbnail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/right"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

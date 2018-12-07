@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2" android:layout_marginTop="05dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/firstlayout"
+        android:layout_alignStart="@+id/firstlayout" android:layout_gravity="center"
+        app:srcCompat="@drawable/bus" />
+
+    <TextView
+       android:layout_width="match_parent" android:textSize="25sp"
+       android:layout_height="wrap_content"
+       android:text="Rate Your Trip" />
+
+    <RatingBar android:id="@+id/rateBar"
+        android:numStars="5" android:stepSize="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="text"
+        android:id="@+id/text"
+        />
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/primary"
+        android:text="Rate Trip"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark" />
+    </LinearLayout>

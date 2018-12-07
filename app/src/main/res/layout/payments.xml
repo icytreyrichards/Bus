@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10"
+                android:padding="05dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="3"
+                    android:padding="05dp">
+                    <TextView
+                        android:id="@+id/textViewcustomcompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gaagaa Bus "
+                        android:textColor="@color/primary_dark"
+                        android:textSize="15sp"
+                        />
+                    <ImageView
+                        android:id="@+id/imageViewcustomprofilephoto"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/logo"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="7"
+                    android:padding="05dp">
+
+                    <TextView
+                        android:id="@+id/textViewcustomsource"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="From Arua"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/textViewcustomdestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To Kampala"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15sp"
+                        android:layout_alignTop="@+id/textViewtheemergencyFullname"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:id="@+id/textViewcustomtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8:00am"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15sp"
+                        android:layout_alignTop="@+id/textViewtheemergencyFullname"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:id="@+id/textViewcustomprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30,000 shs"
+                        android:textColor="@color/accent"
+                        android:textSize="15sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewcustomtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ordinary"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="15sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffe5e5e5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="5dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/cv1"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="05dp">
+            <TextView
+                android:layout_width="200dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Additional Charges"
+                android:textColor="@color/secondary_text"
+                android:textSize="17sp" android:layout_gravity="left"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:padding="0dp">
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="200dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="@color/black"
+                android:textSize="18sp" android:layout_gravity="left"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/txtVat"
+                android:layout_width="wrap_content"
+                android:textStyle="italic" android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="1000" android:layout_gravity="right"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/txtcostt"
+                android:layout_width="match_parent"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="ticket cost"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="match_parent"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:text="total"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:padding="0dp">
+            <TextView
+                android:id="@+id/textViewtype"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Ordinary Bus"
+                android:textColor="@color/secondary_text"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/textvv"
+                android:layout_width="wrap_content"
+                android:textStyle="bold" android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="Seat Booked"
+                android:textColor="@color/secondary_text"
+                android:textSize="24sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </LinearLayout>
+
+
+            <TextView
+            android:id="@+id/textViewseatno"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Seat Booked"
+            android:textColor="@color/secondary_text"
+            android:textSize="19sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textColor="@color/secondary_text"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerpayment" />
+
+            <TextView
+            android:id="@+id/textView56"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="PickUp Location "
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:hint="Contact Name"
+                android:text=""
+                android:background="#ffffff"
+                android:textColorHint="@color/black"
+                android:backgroundTint="#eee"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:id="@+id/editTextcontactname"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:hint="Contact Telephone"
+                android:text=""
+                android:background="#ffffff"
+                android:textColorHint="@color/black"
+                android:backgroundTint="#eee"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:id="@+id/editTextcontacttelephone"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/spinnerpickups" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="05dp"
+            android:weightSum="10">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="05dp"
+                android:text="Offline Book (Reserve)" android:layout_weight="5"
+                android:id="@+id/buttonreserve" android:visibility="gone"
+                android:layout_marginTop="05dp"
+                android:textColor="@color/white" android:layout_gravity="start"
+                android:background="@color/primary"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now!" android:layout_weight="5"
+                android:id="@+id/buttonbook" android:layout_gravity="end"
+                android:layout_marginTop="05dp"
+                android:textColor="@color/white"
+                android:background="@color/accent"/>
+            </LinearLayout>
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar1"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>

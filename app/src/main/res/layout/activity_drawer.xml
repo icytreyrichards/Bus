@@ -1,0 +1,134 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:umanoPanelHeight="60dp"
+    app:umanoShadowHeight="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@android:color/transparent"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:fitsSystemWindows="true" android:visibility="@android:color/transparent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar" android:background="@android:color/transparent"
+                android:layout_width="match_parent" app:titleTextColor="@color/primary"
+                android:layout_height="?attr/actionBarSize" style="@style/ToolTheme2"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="02dp" android:layout_margin="10dp"
+                android:id="@+id/cv" android:visibility="gone"
+                android:elevation="10dp">
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:background="@drawable/ic_trending_flat_white_24dp"
+                    android:orientation="vertical">
+                    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent" android:background="@color/white"
+                        android:layout_height="35dp" android:layout_marginTop="10dp" android:visibility="gone"
+                        android:orientation="horizontal" android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="25dp" android:layout_marginLeft="10dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            app:srcCompat="@drawable/logo" android:layout_weight="5" />
+                        <TextView
+                            android:id="@+id/tvlocation" android:layout_marginRight="100dp"
+                            android:layout_width="match_parent" android:textSize="15sp" android:layout_weight="5"
+                            android:layout_height="wrap_content" android:layout_gravity="start"
+                            android:text="Arua" android:gravity="start"/>
+                    </LinearLayout>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplete"
+                        android:layout_width="match_parent" android:visibility="gone"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bordered_red"
+                        android:ems="10" android:drawableRight="@drawable/arrowleft"
+                        android:hint="Address Name"
+                        android:inputType="textPersonName"
+                        android:paddingTop="15dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/seekBar"
+                android:layout_toRightOf="@+id/seekBar"
+                android:fitsSystemWindows="true" />
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="11dp"
+                android:max="10" android:visibility="gone"
+                android:progress="3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" android:weightSum="10">
+        <!-- The Nearest Guy's Details will be sampled here -->
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent" android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnEndTrip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@color/primary"
+                android:text="End Trip" android:layout_marginBottom="10dp"
+                android:textColor="@color/common_google_signin_btn_text_dark" />
+            <TextView
+                android:layout_width="match_parent" android:textSize="18sp"
+                android:layout_height="match_parent" android:id="@+id/tvtime" />
+
+            <TextView
+                android:layout_width="match_parent" android:textSize="20sp"
+                android:layout_height="match_parent" android:text="Route" />
+            <TextView
+                android:layout_width="match_parent" android:textSize="18sp"
+                android:layout_height="match_parent" android:id="@+id/tvroute" />
+
+            <TextView
+                android:layout_width="match_parent" android:textSize="20sp"
+                android:layout_height="match_parent" android:text="Bus Company" />
+            <TextView
+                android:layout_width="match_parent" android:textSize="18sp"
+                android:layout_height="match_parent" android:id="@+id/tvbs" />
+        </LinearLayout>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

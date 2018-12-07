@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    style="@style/AppTheme.NoActionBar">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </android.support.design.widget.AppBarLayout>
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar1"
+            android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/imageView2"  android:layout_marginTop="25dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/firstlayout"
+        android:layout_alignStart="@+id/firstlayout"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bus" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:layout_marginTop="05dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="FullName" android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text=""
+            android:id="@+id/editTextfullname" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:visibility="gone"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:text=""
+            android:background="#ffffff"
+            android:textColorHint="@color/white"
+            android:backgroundTint="#eee"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:id="@+id/editTextemail"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text|number"
+            android:text=""  android:textColor="@color/white"
+            android:hint="Phone Number"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:id="@+id/editTextphone"
+            />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:id="@+id/buttonregisteraccount"
+                android:layout_marginTop="05dp"
+                android:textColor="@color/common_google_signin_btn_text_dark"
+                android:background="@color/accent"/>
+        </LinearLayout>
+
+</LinearLayout>
